@@ -1,0 +1,129 @@
+/* ---------------- Fonts ---------------- */
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&display=swap");
+
+/* ---------------- Variables ---------------- */
+:root {
+  --main-font: "Bai Jamjuree", "Segoe UI", sans-serif, Geneva, Verdana;
+  --main-color: #5b62f4;
+  --font-color: #485785;
+}
+
+/* ---------------- Base ---------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--main-font);
+  line-height: 1.7;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-weight: 700 !important;
+  color: black;
+  color: var(--font-color);
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.section-padding {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.divider {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.intro-section p {
+  max-width: 37rem;
+}
+
+.border-hover {
+  transition: all 0.4s ease-out;
+  border: 2px solid transparent;
+}
+.border-hover:hover {
+  border-color: var(--main-color);
+}
+
+/* ---------------- Navigation ---------------- */
+.navbar {
+  transition: all 0.4s ease-out;
+}
+.navbar .brand {
+  color: var(--main-color);
+}
+.navbar .navbar-nav .nav-link {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+/* ---------------- Home ---------------- */
+@media (max-width: 280px) {
+  #home .btn-info {
+    margin-top: 1rem !important;
+  }
+}
+
+/* ---------------- Services ---------------- */
+.service {
+  transition: all 0.4s ease-out;
+  border: 2px solid transparent;
+}
+
+.icons {
+  width: 80px;
+  height: 80px;
+  color: var(--main-color);
+  font-size: 2rem;
+  box-shadow: inset 2px 2px 8px rgba(55, 94, 148, 0.3),
+    inset -3px -2px 5px rgba(255, 255, 255, 0.8);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------------- Footer ---------------- */
+.btn-icon {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6px;
+  margin-right: 6px;
+}
